@@ -12,6 +12,7 @@
         <module>freemarker8000</module>
         <module>thymeleaf8001</module>
         <module>model</module>
+        <module>activemq8002</module>
     </modules>
 
     <properties>
