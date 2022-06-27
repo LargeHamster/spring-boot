@@ -13,6 +13,7 @@
         <module>thymeleaf8001</module>
         <module>model</module>
         <module>activemq8002</module>
+        <module>rabbitmq8003</module>
     </modules>
 
     <properties>
