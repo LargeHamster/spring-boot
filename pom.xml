@@ -16,6 +16,8 @@
         <module>rabbitmq8003</module>
         <module>webmvc8004</module>
         <module>view8005</module>
+        <module>xml8006</module>
+        <module>uploadfile8007</module>
     </modules>
 
     <properties>
