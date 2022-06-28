@@ -14,6 +14,8 @@
         <module>model</module>
         <module>activemq8002</module>
         <module>rabbitmq8003</module>
+        <module>webmvc8004</module>
+        <module>view8005</module>
     </modules>
 
     <properties>
