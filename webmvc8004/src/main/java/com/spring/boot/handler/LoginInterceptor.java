@@ -25,6 +25,8 @@ public class LoginInterceptor implements HandlerInterceptor {
             response.setContentType("text/json;charset=UTF-8");
             PrintWriter printWriter = response.getWriter();
             printWriter.println("不通过此方法，拦截!接收到的name: "+request.getParameter("name"));
+            printWriter.flush();
+            printWriter.close();
             return false;
         }
         return true;

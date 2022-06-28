@@ -18,6 +18,7 @@
         <module>view8005</module>
         <module>xml8006</module>
         <module>uploadfile8007</module>
+        <module>controlleradvice8008</module>
     </modules>
 
     <properties>
