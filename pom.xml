@@ -19,6 +19,7 @@
         <module>xml8006</module>
         <module>uploadfile8007</module>
         <module>controlleradvice8008</module>
+        <module>websocket8009</module>
     </modules>
 
     <properties>
