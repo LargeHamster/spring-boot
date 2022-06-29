@@ -36,21 +36,25 @@ function disconnect() {
 
 function sendName() {
     stompClient.send("/app/hello", {}, JSON.stringify(
-        {'name': $("#name").val(), 'content': $("#content").val()}));
+        {
+            'name': $("#name").val(),
+            'content': $("#content").val()
+        }
+    ));
 }
 
 function showGreeting(message) {
-    $("#greetings").append("<div>"+message.name+":"+message.content+"</div>");
+    $("#greetings").append("<div>" + message.name + ":" + message.content + "</div>");
 }
 
-$(function (){
-    $("#connect").click(function (){
+$(function () {
+    $("#connect").click(function () {
         connect();
     });
-    $("#disconnect").click(function (){
+    $("#disconnect").click(function () {
         disconnect();
     });
-    $("#send").click(function (){
+    $("#send").click(function () {
         sendName();
     });
 })

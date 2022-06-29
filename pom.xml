@@ -20,6 +20,8 @@
         <module>uploadfile8007</module>
         <module>controlleradvice8008</module>
         <module>websocket8009</module>
+        <module>websocket8010</module>
+        <module>redis8011</module>
     </modules>
 
     <properties>

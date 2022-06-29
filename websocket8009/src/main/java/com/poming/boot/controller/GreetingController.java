@@ -1,6 +1,6 @@
 package com.poming.boot.controller;
 
-import org.springframework.messaging.Message;
+import com.poming.boot.entity.bo.Message;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
