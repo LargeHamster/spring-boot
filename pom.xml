@@ -24,6 +24,7 @@
         <module>rediscache8011</module>
         <module>validation8012</module>
         <module>mybatis8013</module>
+        <module>unittest8014</module>
     </modules>
 
     <properties>
