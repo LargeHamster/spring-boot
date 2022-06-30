@@ -23,6 +23,7 @@
         <module>websocket8010</module>
         <module>rediscache8011</module>
         <module>validation8012</module>
+        <module>mybatis8013</module>
     </modules>
 
     <properties>
