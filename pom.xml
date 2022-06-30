@@ -21,7 +21,8 @@
         <module>controlleradvice8008</module>
         <module>websocket8009</module>
         <module>websocket8010</module>
-        <module>redis8011</module>
+        <module>rediscache8011</module>
+        <module>validation8012</module>
     </modules>
 
     <properties>
