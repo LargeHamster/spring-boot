@@ -25,6 +25,8 @@
         <module>validation8012</module>
         <module>mybatis8013</module>
         <module>unittest8014</module>
+        <module>rediscluster8015</module>
+        <module>jpa8016</module>
     </modules>
 
     <properties>
