@@ -23,9 +23,27 @@ public class JpaTest {
     public void test(){
         List<NameOnly> personCollection = personRepository.findbyLastname("旭强");
         for (NameOnly person : personCollection) {
-            System.out.println(person.toString());
+            System.out.println(person.ToString());
             System.out.println(person.getFirstname());
             System.out.println(person.getLastname());
+            System.out.println(person.getMyHobby());
+        }
+        List<Person> personList = personRepository.findPerson("旭强");
+        for (Person person : personList) {
+            System.out.println(person.toString());
+        }
+        System.out.println("--------------");
+        List<Person> personList1 = personRepository.findByFirstname("黄");
+        for (Person person : personList1) {
+            System.out.println(person.toString());
+        }
+    }
+
+    @Test
+    public void test1(){
+        List<Person> byPage = personRepository.findByPage(2, 2);
+        for (Person person : byPage) {
+            System.out.println(person.toString());
         }
     }
 

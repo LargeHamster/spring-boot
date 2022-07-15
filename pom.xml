@@ -27,6 +27,7 @@
         <module>unittest8014</module>
         <module>rediscluster8015</module>
         <module>jpa8016</module>
+        <module>ajax8017</module>
     </modules>
 
     <properties>

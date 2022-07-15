@@ -16,7 +16,20 @@ public interface PersonRepository extends Repository<Person,Long> {
 
     Collection<Person> findByLastname(String lastname);
 
-    @Query("select firstname as firstname,lastname as lastname from Person where lastname=:lastname")
+    //@Query("select firstname as firstname,lastname as lastname from Person where lastname=:lastname")
+    //List<NameOnly> findbyLastname(String lastname);
+
+    @Query(value = "select my_hobby as myHobby,firstname as firstname,lastname as lastname from person where lastname=:lastname",nativeQuery = true)
     List<NameOnly> findbyLastname(String lastname);
+
+    @Query(value = "select * from person where lastname=:lastname",nativeQuery = true)
+    List<Person> findPerson(String lastname);
+
+    List<Person> findByFirstname(String firstname);
+
+    @Query(value = "select * from Person limit :start,:pageSize",nativeQuery = true)
+    List<Person> findByPage(int start,int pageSize);
+
+    //:#{#对象.属性}
 
 }

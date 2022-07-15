@@ -10,4 +10,12 @@ public interface NameOnly {
 
     String getLastname();
 
+    Long getId();
+
+    String getMyHobby();
+
+    default String ToString(){
+        return "NameOnly(firstname="+getFirstname()+",lastname="+getLastname()+")";
+    }
+
 }
